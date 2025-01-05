@@ -4,6 +4,9 @@ local player = game.Players.LocalPlayer
 local plname = player.Name
 local Character1 = game.Workspace:WaitForChild(plname)
 local h = Character1:FindFirstChild("Humanoid")
+local piggy = game.Workspace:WaitForChildChild("PiggyNPC"):FindFirstChild("PiggyBot")
+local hpiggy = piggy:FindFirstChild("HumanoidRootPart")
+
 
 local Window = Rayfield:CreateWindow({
     Name = "Eclipse | Piggy",
@@ -69,9 +72,6 @@ local Button = Tab2:CreateButton({
         end
     end
  })
-
- local piggy = game.Workspace:WaitForChildChild("PiggyNPC"):FindFirstChild("PiggyBot")
- local hpiggy = piggy:FindFirstChild("HumanoidRootPart")
 
  local freeze = Tab2:CreateButton({
    Name = "Freeze Piggy - RELOAD SCRIPT IF DOESNT WORK",
