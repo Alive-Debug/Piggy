@@ -4,7 +4,7 @@ local player = game.Players.LocalPlayer
 local plname = player.Name
 local Character1 = game.Workspace:WaitForChild(plname)
 local h = Character1:FindFirstChild("Humanoid")
-local piggy = game.Workspace:WaitForChildChild("PiggyNPC"):FindFirstChild("PiggyBot")
+local piggy = game.Workspace:WaitForChild("PiggyNPC"):FindFirstChild("PiggyBot")
 local hpiggy = piggy:FindFirstChild("HumanoidRootPart")
 
 
